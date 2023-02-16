@@ -1,0 +1,17 @@
+{% extends '_base.html'%}
+
+
+{%block title%} Menu {%endblock title%}
+
+
+{%block content%}
+
+{%for outfit in menu %}
+<div>
+<img src="{{outfit.cover.url}}" alt="">
+<h1>{{outfit.title}}</h1>
+<h3>{{outfit.description}}</h3>
+<h2>{{outfit.price}}</h2>
+</div>
+{%endfor%}
+{%endblock content%}
